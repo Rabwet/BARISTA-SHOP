@@ -1,0 +1,75 @@
+/* ============================================================
+   Design Tokens — Neon Bean Coffee
+   ============================================================ */
+
+:root {
+  /* ---- Cocoa palette ---- */
+  --cocoa-950: #140b07;
+  --cocoa-800: #2a1a12;
+  --cocoa-600: #4a3123;
+  --cocoa-400: #6d5243;
+
+  /* ---- Beige palette ---- */
+  --beige-200: #efe2cc;
+  --beige-400: #d4bc96;
+  --beige-600: #b89d6f;
+
+  /* ---- Accent (neon green) ---- */
+  --neon: #39ff14;
+  --neon-dim: rgba(57, 255, 20, 0.6);
+  --neon-glow: 0 0 12px rgba(57, 255, 20, 0.4);
+  --neon-glow-strong: 0 0 20px rgba(57, 255, 20, 0.5), 0 0 40px rgba(57, 255, 20, 0.2);
+
+  /* ---- Glass ---- */
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-bg-hover: rgba(255, 255, 255, 0.09);
+  --glass-border: rgba(239, 226, 204, 0.15);
+  --glass-border-hover: rgba(239, 226, 204, 0.25);
+  --glass-blur: blur(16px) saturate(140%);
+  --glass-radius: 20px;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --glass-inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  /* ---- Typography ---- */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+  --text-4xl: 2.25rem;   /* 36px */
+  --text-5xl: 3rem;      /* 48px */
+  --text-6xl: 3.75rem;   /* 60px */
+
+  /* ---- Spacing ---- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  /* ---- Layout ---- */
+  --max-width: 1280px;
+  --nav-height: 72px;
+
+  /* ---- Transitions ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+
+  /* ---- Z-index scale ---- */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}

@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "path": "neon-bean",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*vite.*",
+          "endsPattern": ".*ready in.*|.*Local:.*|.*localhost.*"
+        }
+      },
+      "label": "npm: dev - neon-bean",
+      "detail": "Starts Vite development server for Neon Bean Barista Shop"
+    }
+  ]
+}
+

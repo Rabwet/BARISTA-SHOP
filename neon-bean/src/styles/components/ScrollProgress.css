@@ -1,0 +1,16 @@
+/* ============================================================
+   ScrollProgress — thin neon progress bar at page top
+   ============================================================ */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--neon);
+  box-shadow: var(--neon-glow);
+  z-index: var(--z-toast);
+  pointer-events: none;
+  transform-origin: left;
+  /* Width is set dynamically via inline style */
+}

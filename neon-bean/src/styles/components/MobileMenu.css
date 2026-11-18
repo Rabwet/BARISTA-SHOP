@@ -1,0 +1,81 @@
+/* ============================================================
+   MobileMenu — full-screen glass overlay for mobile nav
+   ============================================================ */
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Glass background */
+  background: rgba(20, 11, 7, 0.92);
+}
+
+@supports (backdrop-filter: blur(16px)) {
+  .mobile-menu {
+    -webkit-backdrop-filter: blur(24px) saturate(140%);
+    backdrop-filter: blur(24px) saturate(140%);
+  }
+}
+
+/* ---- Close button ---- */
+.mobile-menu__close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--beige-200);
+  cursor: pointer;
+  transition:
+    background var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+}
+
+.mobile-menu__close:hover {
+  background: var(--glass-bg);
+  color: var(--neon);
+}
+
+/* ---- Nav list ---- */
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+/* ---- Nav links — large touch targets ---- */
+.mobile-menu__link {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--beige-400);
+  text-decoration: none;
+  padding: var(--space-sm) var(--space-lg);
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__link--active {
+  color: var(--neon);
+}
+
+/* Body scroll lock — applied via JS */
+body.scroll-locked {
+  overflow: hidden;
+}

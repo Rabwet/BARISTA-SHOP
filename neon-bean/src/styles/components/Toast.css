@@ -1,0 +1,78 @@
+/* ============================================================
+   Toast — glass notification at bottom-right
+   ============================================================ */
+
+.toast-container {
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: 12px;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--beige-200);
+  min-width: 260px;
+  max-width: 380px;
+
+  /* Glass styling */
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow), var(--glass-inner-highlight);
+}
+
+@supports (backdrop-filter: blur(16px)) {
+  .toast {
+    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
+  }
+}
+
+/* ---- Success variant ---- */
+.toast--success {
+  border-color: rgba(57, 255, 20, 0.3);
+}
+
+.toast__icon--success {
+  color: var(--neon);
+  flex-shrink: 0;
+}
+
+/* ---- Error variant ---- */
+.toast--error {
+  border-color: rgba(255, 68, 68, 0.3);
+}
+
+.toast__icon--error {
+  color: #ff4444;
+  flex-shrink: 0;
+}
+
+.toast__message {
+  flex: 1;
+}
+
+/* ---- Mobile: full-width at bottom ---- */
+@media (max-width: 767px) {
+  .toast-container {
+    left: var(--space-md);
+    right: var(--space-md);
+    bottom: var(--space-md);
+  }
+
+  .toast {
+    max-width: none;
+    min-width: auto;
+  }
+}

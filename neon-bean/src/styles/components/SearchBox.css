@@ -1,0 +1,67 @@
+/* ============================================================
+   SearchBox — Glass-styled search input
+   ============================================================ */
+
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Search icon */
+.search-box__icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--beige-400);
+  opacity: 0.6;
+  pointer-events: none;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.search-box:focus-within .search-box__icon {
+  color: var(--neon);
+  opacity: 1;
+}
+
+/* Input field — extends glass-input */
+.search-box__input {
+  padding-left: 44px;
+  padding-right: 44px;
+  font-size: var(--text-base);
+}
+
+/* Clear button */
+.search-box__clear {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--beige-400);
+  cursor: pointer;
+  transition:
+    color var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out);
+}
+
+.search-box__clear:hover {
+  color: var(--beige-200);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.search-box__clear svg {
+  width: 16px;
+  height: 16px;
+}

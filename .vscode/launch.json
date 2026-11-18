@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome with Dev Server",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/neon-bean",
+      "preLaunchTask": "npm: dev - neon-bean",
+      "sourceMaps": true
+    },
+    {
+      "name": "Launch Chrome against localhost:5173",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/neon-bean",
+      "sourceMaps": true
+    },
+    {
+      "name": "Attach to Chrome (port 9222)",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/neon-bean",
+      "sourceMaps": true
+    }
+  ]
+}

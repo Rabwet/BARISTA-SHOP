@@ -1,0 +1,12 @@
+[
+  { "id": 1, "src": "/images/gallery/gallery-1.jpg", "alt": "Latte art rosetta in a ceramic cup" },
+  { "id": 2, "src": "/images/gallery/gallery-2.jpg", "alt": "Barista pouring steamed milk" },
+  { "id": 3, "src": "/images/gallery/gallery-3.jpg", "alt": "Neon Bean Coffee shop interior" },
+  { "id": 4, "src": "/images/gallery/gallery-4.jpg", "alt": "Fresh coffee beans in a wooden bowl" },
+  { "id": 5, "src": "/images/gallery/gallery-5.jpg", "alt": "Cold brew coffee with ice" },
+  { "id": 6, "src": "/images/gallery/gallery-6.jpg", "alt": "Pastry display with croissants and muffins" },
+  { "id": 7, "src": "/images/gallery/gallery-7.jpg", "alt": "Espresso extraction close-up" },
+  { "id": 8, "src": "/images/gallery/gallery-8.jpg", "alt": "Cozy evening at Neon Bean Coffee" },
+  { "id": 9, "src": "/images/gallery/gallery-9.jpg", "alt": "Coffee beans roasting in a drum roaster" },
+  { "id": 10, "src": "/images/gallery/gallery-10.jpg", "alt": "Iced latte with oat milk" }
+]

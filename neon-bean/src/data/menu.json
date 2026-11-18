@@ -1,0 +1,167 @@
+[
+  {
+    "id": "espresso",
+    "name": "Espresso",
+    "description": "A bold, concentrated shot of pure Arabica coffee with a rich crema layer.",
+    "price": 250,
+    "category": "hot",
+    "image": "/images/menu/espresso.jpg",
+    "sizes": [
+      { "label": "Single", "priceModifier": 0 },
+      { "label": "Double", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "americano",
+    "name": "Americano",
+    "description": "Espresso diluted with hot water for a smooth, full-bodied cup.",
+    "price": 300,
+    "category": "hot",
+    "image": "/images/menu/americano.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 80 }
+    ]
+  },
+  {
+    "id": "latte",
+    "name": "Caffè Latte",
+    "description": "Velvety steamed milk poured over a double espresso, finished with delicate foam art.",
+    "price": 400,
+    "category": "hot",
+    "image": "/images/menu/latte.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "cappuccino",
+    "name": "Cappuccino",
+    "description": "Equal parts espresso, steamed milk, and thick foam — the Italian classic.",
+    "price": 400,
+    "category": "hot",
+    "image": "/images/menu/cappuccino.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "mocha",
+    "name": "Mocha",
+    "description": "Rich chocolate blended with espresso and steamed milk, topped with whipped cream.",
+    "price": 450,
+    "category": "hot",
+    "image": "/images/menu/mocha.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "flat-white",
+    "name": "Flat White",
+    "description": "Microfoam milk over a double ristretto — silky, strong, and perfectly balanced.",
+    "price": 420,
+    "category": "hot",
+    "image": "/images/menu/flat-white.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "chai-latte",
+    "name": "Chai Latte",
+    "description": "Spiced Kenyan chai with steamed milk, cinnamon, cardamom, and a hint of ginger.",
+    "price": 380,
+    "category": "hot",
+    "image": "/images/menu/chai-latte.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 80 }
+    ]
+  },
+  {
+    "id": "matcha-latte",
+    "name": "Matcha Latte",
+    "description": "Ceremonial-grade matcha whisked with steamed oat milk for an earthy, creamy treat.",
+    "price": 450,
+    "category": "hot",
+    "image": "/images/menu/matcha-latte.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "cold-brew",
+    "name": "Cold Brew",
+    "description": "Steeped for 18 hours in cold water — smooth, low-acid, and naturally sweet.",
+    "price": 380,
+    "category": "cold",
+    "image": "/images/menu/cold-brew.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 80 }
+    ]
+  },
+  {
+    "id": "iced-latte",
+    "name": "Iced Latte",
+    "description": "Chilled espresso and cold milk over ice — crisp and refreshing.",
+    "price": 400,
+    "category": "cold",
+    "image": "/images/menu/iced-latte.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "iced-mocha",
+    "name": "Iced Mocha",
+    "description": "Cold chocolate espresso topped with whipped cream and a chocolate drizzle.",
+    "price": 450,
+    "category": "cold",
+    "image": "/images/menu/iced-mocha.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 },
+      { "label": "Large", "priceModifier": 100 }
+    ]
+  },
+  {
+    "id": "croissant",
+    "name": "Butter Croissant",
+    "description": "Flaky, golden, and buttery — baked fresh every morning.",
+    "price": 200,
+    "category": "pastry",
+    "image": "/images/menu/croissant.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 }
+    ]
+  },
+  {
+    "id": "chocolate-muffin",
+    "name": "Chocolate Muffin",
+    "description": "Moist chocolate muffin with dark chocolate chips and a crackly sugar top.",
+    "price": 250,
+    "category": "pastry",
+    "image": "/images/menu/chocolate-muffin.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 }
+    ]
+  },
+  {
+    "id": "cinnamon-roll",
+    "name": "Cinnamon Roll",
+    "description": "Soft, swirled dough with cinnamon-sugar filling and cream cheese glaze.",
+    "price": 280,
+    "category": "pastry",
+    "image": "/images/menu/cinnamon-roll.jpg",
+    "sizes": [
+      { "label": "Regular", "priceModifier": 0 }
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+/* ============================================================
+   BackgroundOrbs — ambient floating orbs behind all content
+   ============================================================ */
+
+.background-orbs {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ---- Shared orb base ---- */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  will-change: transform;
+}
+
+/* ---- Individual orb positions & sizes ---- */
+
+/* Beige orb — top-left drift */
+.orb--beige-1 {
+  width: 500px;
+  height: 500px;
+  top: -10%;
+  left: -5%;
+  background: var(--beige-400);
+  opacity: 0.08;
+  animation: orb-drift-1 30s var(--ease-in-out) infinite alternate;
+}
+
+/* Beige orb — bottom-right drift */
+.orb--beige-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -5%;
+  right: -8%;
+  background: var(--beige-200);
+  opacity: 0.08;
+  animation: orb-drift-2 35s var(--ease-in-out) infinite alternate;
+}
+
+/* Neon-green orb — mid-right, subtle */
+.orb--neon {
+  width: 350px;
+  height: 350px;
+  top: 40%;
+  right: 15%;
+  background: var(--neon);
+  opacity: 0.04;
+  animation: orb-drift-3 25s var(--ease-in-out) infinite alternate;
+}
+
+/* Cocoa orb — center-left */
+.orb--cocoa {
+  width: 450px;
+  height: 450px;
+  top: 60%;
+  left: 10%;
+  background: var(--cocoa-400);
+  opacity: 0.06;
+  animation: orb-drift-4 40s var(--ease-in-out) infinite alternate;
+}
+
+/* ---- Keyframes for slow organic drift ---- */
+
+@keyframes orb-drift-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(80px, 60px) scale(1.1); }
+}
+
+@keyframes orb-drift-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-70px, -50px) scale(1.05); }
+}
+
+@keyframes orb-drift-3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-60px, 40px) scale(1.15); }
+}
+
+@keyframes orb-drift-4 {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(50px, -70px) scale(1.08); }
+}
+
+/* ---- Respect prefers-reduced-motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .orb {
+    animation: none !important;
+  }
+}

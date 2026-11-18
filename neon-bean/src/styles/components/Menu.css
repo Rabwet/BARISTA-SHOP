@@ -1,0 +1,74 @@
+/* ============================================================
+   Menu Page — layout & grid
+   ============================================================ */
+
+.menu-page {
+  padding-top: calc(var(--nav-height) + var(--space-xl));
+  padding-bottom: var(--space-3xl);
+  min-height: 100vh;
+}
+
+.menu-page__header {
+  margin-bottom: var(--space-xl);
+}
+
+.menu-page__title {
+  margin-bottom: var(--space-md);
+}
+
+/* ---- Filters row ---- */
+.menu-page__filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+/* ---- Results count ---- */
+.menu-page__count {
+  font-size: var(--text-sm);
+  color: var(--beige-400);
+  margin-bottom: var(--space-md);
+}
+
+.menu-page__count strong {
+  color: var(--neon);
+  font-weight: 600;
+}
+
+/* ---- Responsive grid ---- */
+.menu-page__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+/* ---- Empty state ---- */
+.menu-page__empty {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-md);
+}
+
+.menu-page__empty p {
+  margin: 0 auto;
+  font-size: var(--text-lg);
+  color: var(--beige-400);
+}
+
+@media (min-width: 768px) {
+  .menu-page__filters {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-page__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

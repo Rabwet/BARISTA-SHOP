@@ -1,0 +1,114 @@
+/* ============================================================
+   MenuCard — Glass card for a single menu item
+   ============================================================ */
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--glass-radius);
+}
+
+/* Remove default glass-card padding — we handle it ourselves */
+.menu-card.glass-card {
+  padding: 0;
+}
+
+/* ---- Image placeholder ---- */
+.menu-card__image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--glass-radius) var(--glass-radius) 0 0;
+}
+
+.menu-card__initials {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  user-select: none;
+}
+
+/* Category-based gradient backgrounds */
+.menu-card__image--hot {
+  background: linear-gradient(135deg, #5c2e0e 0%, #8b4513 50%, #a0522d 100%);
+}
+
+.menu-card__image--cold {
+  background: linear-gradient(135deg, #1a3a4a 0%, #2d5a6e 50%, #3a7ca5 100%);
+}
+
+.menu-card__image--pastry {
+  background: linear-gradient(135deg, #6d5a2b 0%, #b89d6f 50%, #d4bc96 100%);
+}
+
+/* ---- Content area ---- */
+.menu-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  flex: 1;
+}
+
+.menu-card__name {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--beige-200);
+  line-height: 1.3;
+}
+
+.menu-card__description {
+  font-size: var(--text-sm);
+  color: var(--beige-400);
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* ---- Price ---- */
+.menu-card__price {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--neon);
+}
+
+/* ---- Footer: size selector + add button ---- */
+.menu-card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: 0 var(--space-md) var(--space-md);
+}
+
+.menu-card__add-btn {
+  width: 100%;
+}
+
+/* ---- Hover glow effect ---- */
+.menu-card:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    var(--glass-inner-highlight),
+    0 0 0 1px rgba(57, 255, 20, 0.1);
+}
+
+@media (min-width: 768px) {
+  .menu-card__content {
+    padding: var(--space-lg);
+  }
+
+  .menu-card__footer {
+    padding: 0 var(--space-lg) var(--space-lg);
+  }
+
+  .menu-card__name {
+    font-size: var(--text-xl);
+  }
+}

@@ -1,0 +1,79 @@
+/* ============================================================
+   CategoryTabs — Horizontal filter tab row
+   ============================================================ */
+
+.category-tabs {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual tab pill */
+.category-tab {
+  position: relative;
+  flex-shrink: 0;
+  padding: 10px 20px;
+  min-height: 44px;
+  min-width: 44px;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--beige-400);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    color var(--duration-fast) var(--ease-out),
+    background var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out);
+  z-index: 1;
+}
+
+.category-tab:hover {
+  color: var(--beige-200);
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+}
+
+/* Active state */
+.category-tab--active {
+  color: var(--cocoa-950);
+  background: var(--neon);
+  border-color: var(--neon);
+}
+
+.category-tab--active:hover {
+  color: var(--cocoa-950);
+  background: var(--neon);
+  border-color: var(--neon);
+}
+
+/* Sliding indicator behind active tab (Framer Motion layoutId) */
+.category-tab__indicator {
+  position: absolute;
+  inset: 0;
+  background: var(--neon);
+  border-radius: 999px;
+  z-index: -1;
+  box-shadow: var(--neon-glow);
+}
+
+@media (min-width: 768px) {
+  .category-tabs {
+    gap: var(--space-md);
+  }
+
+  .category-tab {
+    padding: 10px 24px;
+    font-size: var(--text-base);
+  }
+}
